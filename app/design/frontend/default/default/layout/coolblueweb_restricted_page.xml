@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<layout>
+	<restricted_page_index_password>
+		<reference name="content">
+			<block type="core/template" name="restricted.password.form" as="restricted_password_form" template="coolblueweb/restricted/page/password/form.phtml"></block>
+		</reference>
+	</restricted_page_index_password>
+</layout>

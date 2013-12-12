@@ -1,0 +1,22 @@
+<form action="<?php echo Mage::getUrl('restricted_page/index/validate') ?>" method="post">
+    <div class="fieldset">
+        <h2 class="legend"><?php echo Mage::helper('cms')->__('You are attempting to access a restricted page.') ?></h2>
+        <p><small>Please enter your authorization code below.</small></p>
+        <ul class="form-list">
+            <li class="wide">
+                <div class="field">
+                    <label for="name" class="required"><em>*</em>Password</label>
+                    <div class="input-box">
+                        <input name="password" id="password" title="password" value="" class="input-text required-entry" type="password">
+                        <input type="hidden" name="page_id" id="page_id" value="<?php echo Mage::app()->getRequest()->getParam('page_id') ?>" style="display:none !important;">
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="buttons-set">
+        <p class="required">* Required Fields</p>
+        <input type="text" name="hideit" id="hideit" value="" style="display:none !important;">
+        <button type="submit" title="Submit" class="button"><span><span>Submit</span></span></button>
+    </div>
+</form>
